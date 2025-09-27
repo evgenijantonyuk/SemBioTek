@@ -1,4 +1,10 @@
 
+:root {
+    --body-bg: #f3f0f0;
+    --header-bg: #360505;
+    --section-bg: #e7f3ed;
+}
+
 @font-face {
     font-family: "Lato-Bold";
     src:
@@ -45,7 +51,6 @@
 }
 
 body {
-    background-color: #f3f0f0;
     margin: 0;
     padding: 0;
     font-family:  'Montserrat-Regular', sans-serif;
@@ -72,6 +77,8 @@ h6 {
     padding: 0;
 }
 
+.main {}
+
 img {
     max-width: 100%;
     margin: 0;
@@ -82,12 +89,12 @@ img {
     max-width: 1280px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
 .header {
     width: 100%;
-    background-color: #360505;
+    background-color: var(--header-bg);
 }
 
 .header__wrap {
@@ -137,11 +144,13 @@ img {
 /* ==================== */
 .hero {
     width: 100%;
+    background-color:  var(--section-bg);
     background-image: url("./../images/hero-fon.jpg");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
     min-height: 500px;
+    margin-bottom: 25px;
 }
 
 .hero__text {
@@ -184,12 +193,13 @@ img {
 .advantages {
     width: 100%;
     padding: 0 30px;
-    background-color: #e7f3ed;
+    margin-bottom: 25px;
 }
 
 .advantages__block {
     width: 100%;
     display: flex;
+    margin-bottom: 15px;
 }
 
 .advantages__text {
@@ -199,16 +209,37 @@ img {
     justify-content: center;
 }
 
+.advantages__text h3 {
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif;
+    margin-bottom: 15px;
+}
+
 .advantages__image {
     max-width: 300px;
     max-height: 300px;
 }
-
+/* ================================== */
 .peculiarities h3 {
+    font-size: 34px;
     text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif;
+    margin-bottom: 15px;
 }
 
 /* ================================= */
+.catalog {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.catalog h3 {
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
 .catalog__cards {
     width: 100%;
     display: flex;
@@ -241,8 +272,92 @@ img {
     }
 }
 /* ====================================== */
+.about {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.about h3 {
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+/* ====================================== */
+.contacts {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.map {
+    width: 500px;
+}
+
+.map__address {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button__email {
+    border: 1px solid #000;
+    padding: 15px 25px;
+    color: #000;
+}
+
+.button__email_details {
+    background-color: transparent;
+}
+
+/* ===================== */
+
+.details {
+    display: none;
+    position: absolute;
+    width: 500px;
+    color: #ffffff;
+    background-color: #8c8b8b;
+    padding: 25px;
+    border-radius: 5px;
+    top: 0;
+    right: 40%;
+}
+.show {
+    display: block;
+}
+
+.icon__close {
+    cursor: pointer;
+    width:  20px;
+}
+
+
+
+@media (max-width: 780px) {
+    .contacts {
+        flex-direction: column;
+    }
+    .map {
+        text-align: center;
+    }
+    .details {
+        right: 0;
+        width: 300px;
+    }
+}
+@media (max-width: 520px) {
+    .map {
+       width: 320px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* ====================================== */
 .footer {
     width: 100%;
-    background-color: #360505;
+    background-color: var(--header-bg);
     min-height: 70px;
 }
