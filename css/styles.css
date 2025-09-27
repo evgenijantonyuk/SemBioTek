@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: "Lato-Bold";
+    src:
+            url("/fonts/Lato-Bold.woff2") format("woff2"),
+            url("/fonts/Lato-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src:
+            url("/fonts/Lato-Regular.woff2") format("woff2"),
+            url("/fonts/Lato-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src:
+            url("/fonts/Montserrat-Bold.woff2") format("woff2"),
+            url("/fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat-MediumItalic";
+    src:
+            url("/fonts/Montserrat-MediumItalic.woff2") format("woff2"),
+            url("/fonts/Montserrat-MediumItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src:
+            url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+            url("/fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f0f0;
+    margin: 0;
+    padding: 0;
+    font-family:  'Montserrat-Regular', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*=======================*/
+.wrapper {
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0  auto;
+}
+
+.header {
+    width: 100%;
+    background-color: #360505;
+}
+
+.header__wrap {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    width: 75px;
+    height: 60px;
+}
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 45px;
+}
+
+.header__item {}
+
+.header__link {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.header__link:active {
+    color: #838282;
+}
+.header__link:hover {
+    color: #838282;
+}
+.header__link:focus {
+    color: #838282;
+}
+/* ==================== */
+.hero {
+    width: 100%;
+    background-image: url("./../images/hero-fon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    min-height: 500px;
+}
+
+.hero__text {
+    margin: 0;
+    padding: 75px;
+}
+
+.hero__text h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 36px;
+    padding: 0;
+    color: #fff;
+}
+
+.hero__text p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 26px;
+    line-height: 35px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .hero__text {
+        padding: 25px;
+    }
+    .hero__text h1 {
+        font-size: 28px;
+    }
+    .hero__text p {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/* =============================== */
+.advantages {
+    width: 100%;
+    padding: 0 30px;
+    background-color: #e7f3ed;
+}
+
+.advantages__block {
+    width: 100%;
+    display: flex;
+}
+
+.advantages__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.peculiarities h3 {
+    text-align: center;
+}
+
+/* ================================= */
+.catalog__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.catalog__card img {
+    width: 100%;
+    max-width: 450px;
+    height: 380px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+@media (max-width: 500px) {
+    .catalog__card img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+@media (max-width: 950px) {
+    .catalog__cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalog__card:first-child {
+        margin-bottom: 25px;
+    }
+}
+/* ====================================== */
+.footer {
+    width: 100%;
+    background-color: #360505;
+    min-height: 70px;
+}
