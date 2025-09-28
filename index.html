@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="header">
-	<div class="wrapper">
+	<div class="wrapper__header">
 		<div class="header__wrap">
 			<div class="header__logo">
 				<img class="" src="./images/logo.jpg" alt="логотип компании">
@@ -20,16 +20,16 @@
 			<nav class="header__nav">
 				<ul class="header__list">
 					<li class="header__item">
-						<a class="header__link" href="#">Главная</a>
+						<a class="header__link" href="#main">Главная</a>
 					</li>
 					<li class="header__item">
-						<a class="header__link" href="#">Каталог</a>
+						<a class="header__link" href="#catalog">Каталог</a>
 					</li>
 					<li class="header__item">
-						<a class="header__link" href="#">О компании</a>
+						<a class="header__link" href="#about">О компании</a>
 					</li>
 					<li class="header__item">
-						<a class="header__link" href="#">Контакты</a>
+						<a class="header__link" href="#contacts">Контакты</a>
 					</li>
 				</ul>
 			</nav>
@@ -42,7 +42,6 @@
 	</div>
 	<!--	mobile nav    -->
 	<div class="mobile-container">
-		
 		<nav class="header__nav-mobile">
 			<ul class="header__list-mobile">
 				<li class="header__item-mobile">
@@ -61,8 +60,7 @@
 		</nav>
 	</div>
 </header>
-<main class="main">
-	<div class="wrapper">
+<main id="main" class="main">
 		<section class="hero">
 			<div class="hero__text">
 				<h1>Дражированные семена &ndash;</h1>
@@ -70,10 +68,8 @@
 					Для дражирования отбираются только высококачественные, калиброванные семена.</p>
 			</div>
 		</section>
-	</div>
-	
-	<div class="wrapper">
-		<section class="advantages">
+		<div class="wrapper">
+		<section id="advantages" class="advantages">
 			<div class="advantages__block">
 				<div class="advantages__text">
 					<h3>Главные преимущества дражирования:</h3>
@@ -115,10 +111,8 @@
 				</ul>
 			</div>
 		</section>
-	</div>
-	
-	<div class="wrapper">
-		<section class="catalog">
+		
+		<section id="catalog" class="catalog">
 			<h3>Каталог</h3>
 			<p>Дражированные семена:
 			</p>
@@ -131,10 +125,8 @@
 				</div>
 			</div>
 		</section>
-	</div>
-	
-	<div class="wrapper">
-		<section class="about">
+		
+		<section id="about" class="about">
 			<h3>О компании</h3>
 			<p>
 				Компания ООО «СемБиоТех» создана при грантовой поддержке Фонда содействия инновациям (fasie.ru) в рамках
@@ -143,10 +135,8 @@
 			
 			</p>
 		</section>
-	</div>
-	
-	<div class="wrapper">
-		<div class="contacts">
+		
+		<section id="contacts" class="contacts">
 			<div class="contacts__form">
 				<h3>Наши реквизиты:</h3>
 				<p>Общество с ограниченной ответственностью ООО «СемБиоТех»</p>
@@ -178,10 +168,11 @@
 				        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1d49b774eab465a4b2d89559559eba269e9bf95b88eb1857109130a52d15706b&amp;max-width=523&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
 				        class="map"></script>
 			</div>
-		</div>
+		</section>
 	</div>
 </main>
 <footer class="footer">
+	<div class="wrapper__header"></div>
 </footer>
 </body>
 </html>
