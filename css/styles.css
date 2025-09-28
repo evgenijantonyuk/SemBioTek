@@ -53,7 +53,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family:  'Montserrat-Regular', sans-serif;
+    font-family:  'Montserrat-Regular', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -84,7 +84,107 @@ img {
     margin: 0;
     padding: 0;
 }
-/*=======================*/
+/*========== mobile =============*/
+.mobile-container {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--header-bg);
+}
+
+.header__nav-mobile {
+    display: none;
+}
+
+.header__list-mobile {
+    width:  100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.header__link-mobile {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.header__item-mobile:not(:last-child) {
+    margin-bottom: 25px;
+}
+.header__burger-btn {
+    background: var(--header-bg);
+    position: relative;
+    width: 40px;
+    height: 40px;
+    right: 35px;
+    border: none;
+    z-index: 2;
+}
+
+.header__burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform .3s;
+}
+
+.header__burger-btn span:nth-of-type(2) {
+    top: calc(50% - 10px);
+}
+
+.header__burger-btn span:nth-of-type(3) {
+    top: calc(50% + 10px);
+}
+
+.header__burger-btn li {
+    list-style-type: none;
+}
+
+.header__burger-btn.active span:first-of-type {
+    display:  none;
+}
+
+.header__burger-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header__burger-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header__burger-btn {
+    display: none;
+}
+
+.nav-list__item-mobile:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.active {
+    display: flex;
+}
+
+@media screen and (max-width: 875px) {
+    .header__nav {
+        display: none;
+    }
+    .header__burger-btn {
+        display: block;
+    }
+}
+/* ============================= */
 .wrapper {
     max-width: 1280px;
     padding-left: 15px;
