@@ -3,6 +3,11 @@
     --body-bg: #f6f6f6;
     --header-bg: #360505;
     --section-bg: #f8f4eb;
+    --button-bg: #8c8b8b;
+    --button-text: #f1f1f1;
+    --button-bg-hover: #a8a7a7;
+    --button-text-hover: #000;
+    --burger-color: #fff
 }
 
 @font-face {
@@ -27,6 +32,14 @@
             url("/fonts/Montserrat-Bold.woff2") format("woff2"),
             url("/fonts/Montserrat-Bold.woff") format("woff");
     font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src:
+            url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+            url("/fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
@@ -125,7 +138,7 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #f1f1f1;
+    color: var(--button-bg-hover);
     outline: none;
     transition: color 0.3s ease;
 }
@@ -151,7 +164,7 @@ img {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--burger-color);
     transition: transform .3s;
 }
 
@@ -256,7 +269,7 @@ img {
     width: 100%;
     max-width: 2000px;
     background-color:  var(--section-bg);
-    background-image: url("./../images/hero-fon.jpg");
+    background-image: url("./../images/hero-fon1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
@@ -266,6 +279,7 @@ img {
 .hero__text {
     margin: 0;
     padding: 75px;
+    text-align: center;
 }
 
 .hero__text h1 {
@@ -274,16 +288,17 @@ img {
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 36px;
     padding: 0;
-    color: #fff;
+    color: #000000;
+
 }
 
 .hero__text p {
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat-SemiBold', sans-serif;
     font-size: 26px;
     line-height: 35px;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #000;
 }
 
 @media (max-width: 500px) {
@@ -301,6 +316,7 @@ img {
 
 /* =============================== */
 .advantages {
+    padding-top: 25px;
     width: 100%;
     margin-bottom: 25px;
 }
@@ -309,13 +325,15 @@ img {
     width: 100%;
     display: flex;
     margin-bottom: 15px;
+    align-items: center;
 }
 
 .advantages__text {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
 }
 
 .advantages__text h3 {
@@ -326,6 +344,7 @@ img {
 }
 
 .advantages__item {
+    margin-right: 7px;
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -333,8 +352,8 @@ img {
 }
 
 .advantages__image {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 900px;
+    max-height: 230px;
 }
 @media (max-width: 768px) {
     .advantages__block {
@@ -342,6 +361,25 @@ img {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.technology {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.technology h3 {
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Montserrat-Bold', sans-serif;
+    margin-bottom: 10px;
+}
+
+.technology__item {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 /* ================================== */
 .peculiarities h3 {
@@ -423,6 +461,26 @@ img {
     line-height: normal;
 }
 /* ====================================== */
+.use {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.use h3 {
+    margin-bottom: 10px;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Montserrat-Bold', sans-serif;
+    line-height: normal;
+}
+
+.use p {
+    margin: 0;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+/* ====================================== */
 .contacts {
     width: 100%;
     display: flex;
@@ -464,23 +522,23 @@ img {
 .button__email {
     border: 1px solid #000;
     padding: 15px 25px;
-    color: #f1f1f1;
+    color: var(--button-text);
     border-radius: 5px;
-    background-color: #8c8b8b;
+    background-color: var(--button-bg);
     cursor: pointer;
     transition: .3s ease;
 }
 .button__email:active {
-    background-color: #a8a7a7;
-    color: #000000;
+    background-color: var(--button-bg-hover);
+    color: var(--button-text-hover);
 }
 .button__email:hover {
-    background-color: #a8a7a7;
-    color: #000000;
+    background-color: var(--button-bg-hover);
+    color: var(--button-text-hover);
 }
 .button__email:focus {
-    background-color: #a8a7a7;
-    color: #000000;
+    background-color: var(--button-bg-hover);
+    color: var(--button-text-hover);
 }
 
 .button__email_details {}
