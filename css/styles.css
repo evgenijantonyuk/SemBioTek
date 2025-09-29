@@ -400,6 +400,9 @@ img {
     .technology__text {
         flex-direction: column;
     }
+    .technology__image {
+        max-width: 900px;
+    }
 }
 /* ================================== */
 .peculiarities h3 {
