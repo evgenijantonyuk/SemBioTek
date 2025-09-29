@@ -361,6 +361,10 @@ img {
         flex-direction: column;
         align-items: center;
     }
+    .advantages__image {
+        max-width: 550px;
+        max-height: 170px;
+    }
 }
 
 .technology {
