@@ -632,4 +632,10 @@ img {
     width: 100%;
     background-color: var(--header-bg);
     min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__email {
+    color: var(--button-text);
 }
