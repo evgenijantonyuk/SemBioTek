@@ -372,6 +372,17 @@ img {
     margin-bottom: 25px;
 }
 
+.technology__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technology__list {}
+
+.technology__image {
+    max-width: 40%;
+}
+
 .technology h3 {
     font-size: 34px;
     text-align: center;
@@ -383,6 +394,12 @@ img {
     font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .technology__text {
+        flex-direction: column;
+    }
 }
 /* ================================== */
 .peculiarities h3 {
@@ -396,6 +413,7 @@ img {
     font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
     margin-bottom: 10px;
+    text-indent: 30px;
 }
 /* ================================= */
 .catalog {
@@ -467,6 +485,7 @@ img {
     font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
     line-height: normal;
+    text-indent: 30px;
 }
 /* ====================================== */
 .use {
@@ -486,6 +505,7 @@ img {
     font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
     line-height: normal;
+    text-indent: 30px;
 }
 /* ====================================== */
 .contacts {
