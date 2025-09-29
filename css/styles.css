@@ -7,7 +7,7 @@
     --button-text: #f1f1f1;
     --button-bg-hover: #a8a7a7;
     --button-text-hover: #000;
-    --burger-color: #fff
+    --burger-color: #fff;
 }
 
 @font-face {
@@ -68,6 +68,7 @@ body {
     padding: 0;
     font-family:  'Montserrat', Arial, Helvetica, sans-serif;
     background-color: var(--body-bg);
+    font-size: 17px;
 }
 
 ul {
@@ -346,7 +347,6 @@ img {
 .advantages__item {
     margin-right: 7px;
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -377,7 +377,6 @@ img {
 
 .technology__item {
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -391,7 +390,6 @@ img {
 
 .peculiarities__item {
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -407,6 +405,13 @@ img {
     font-size: 34px;
     text-align: center;
     font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.catalog p {
+    margin-right: 7px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .catalog__cards {
@@ -456,7 +461,6 @@ img {
 .about p {
     margin: 0;
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     line-height: normal;
 }
@@ -476,7 +480,6 @@ img {
 .use p {
     margin: 0;
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     line-height: normal;
 }
@@ -497,7 +500,6 @@ img {
     margin: 0;
     margin-bottom: 10px;
     font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
     font-weight: 400;
     line-height: normal;
 }
