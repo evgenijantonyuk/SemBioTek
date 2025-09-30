@@ -312,6 +312,10 @@ img {
     font-size: 36px;
     padding: 0;
     color: var(--hero-title-color);
+    -webkit-text-stroke: 1px #000;
+}
+.hero__title:hover {
+    -webkit-text-fill-color: #a8a7a7;
 }
 
 .hero__text p {
