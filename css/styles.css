@@ -327,20 +327,30 @@ img {
     text-transform: uppercase;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .hero__text {
-        padding: 25px;
+        padding: 45px;
     }
     .hero__title {
         font-size: 28px;
 
     }
-    .hero__title_gradient {
-        color: #0000;
-    }
     .hero__text p {
         text-align: center;
         font-size: 18px;
+    }
+}
+@media (max-width: 370px) {
+    .hero__text {
+        padding: 45px;
+    }
+    .hero__title {
+        font-size: 22px;
+
+    }
+    .hero__text p {
+        text-align: center;
+        font-size: 16px;
     }
 }
 
