@@ -8,6 +8,7 @@
     --button-bg-hover: #a8a7a7;
     --button-text-hover: #000;
     --burger-color: #fff;
+    --hero-title-color: #eceaea;
 }
 
 @font-face {
@@ -310,13 +311,7 @@ img {
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 36px;
     padding: 0;
-}
-
-.hero__title_gradient {
-    background: linear-gradient(45deg, #b1b4b5, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #000000;
+    color: var(--hero-title-color);
 }
 
 .hero__text p {
@@ -336,8 +331,12 @@ img {
     .hero__text {
         padding: 25px;
     }
-    .hero__text h1 {
+    .hero__title {
         font-size: 28px;
+
+    }
+    .hero__title_gradient {
+        color: #0000;
     }
     .hero__text p {
         text-align: center;
