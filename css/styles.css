@@ -312,7 +312,8 @@ img {
     font-size: 36px;
     padding: 0;
     color: var(--hero-title-color);
-    -webkit-text-stroke: 1px #000;
+    -webkit-text-stroke: 1px var(--header-bg);
+    text-shadow: 3px 0 var(--header-bg);
 }
 .hero__title:hover {
     -webkit-text-fill-color: #a8a7a7;
