@@ -296,54 +296,54 @@ img {
     background-position: center;
     background-repeat:no-repeat;
     min-height: 500px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
 }
 
-.hero__text {
-    margin: 0;
-    padding: 75px 135px;
-    text-align: center;
-}
+/*.hero__text {*/
+/*    margin: 0;*/
+/*    padding: 75px 135px;*/
+/*    text-align: center;*/
+/*}*/
 
 .hero__title {
+    padding-top: 85px;
     text-align: center;
-    margin-bottom: 15px;
+    max-width: 700px;
     text-transform: uppercase;
     font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 36px;
-    padding: 0;
+    font-size: 42px;
+    letter-spacing: 5px;
+    line-height: 75px;
     color: var(--hero-title-color);
     -webkit-text-stroke: 1px var(--header-bg);
     text-shadow: 3px 0 var(--header-bg);
 }
-.hero__title:hover {
-    -webkit-text-fill-color: #a8a7a7;
-}
 
-.hero__text p {
-    font-family: 'Montserrat-SemiBold', sans-serif;
-    font-size: 26px;
-    line-height: 35px;
-    margin: 0;
-    padding: 0;
-    color: #000;
-}
-
-.hero__description_uppercase {
-    text-transform: uppercase;
-}
+/*.hero__text p {*/
+/*    font-family: 'Montserrat-SemiBold', sans-serif;*/
+/*    font-size: 26px;*/
+/*    line-height: 35px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    color: #000;*/
+/*}*/
 
 @media (max-width: 550px) {
-    .hero__text {
-        padding: 45px;
-    }
+    /*.hero__text {*/
+    /*    padding: 45px;*/
+    /*}*/
     .hero__title {
-        font-size: 28px;
+        font-size: 34px;
+        letter-spacing: 0;
+        line-height: 40px;
 
     }
-    .hero__text p {
-        text-align: center;
-        font-size: 18px;
-    }
+    /*.hero__text p {*/
+    /*    text-align: center;*/
+    /*    font-size: 18px;*/
+    /*}*/
 }
 @media (max-width: 370px) {
     .hero__text {
@@ -353,10 +353,10 @@ img {
         font-size: 22px;
 
     }
-    .hero__text p {
-        text-align: center;
-        font-size: 16px;
-    }
+    /*.hero__text p {*/
+    /*    text-align: center;*/
+    /*    font-size: 16px;*/
+    /*}*/
 }
 
 /* =============================== */
@@ -364,6 +364,10 @@ img {
     padding-top: 25px;
     width: 100%;
     margin-bottom: 25px;
+}
+
+.advantages__description_uppercase {
+    text-transform: uppercase;
 }
 
 .advantages__block {
@@ -519,7 +523,7 @@ img {
 .map {
     width: 500px;
     filter: grayscale(1);
-    -ms-filter: grayscale(1);
+    /*-ms-filter: grayscale(1);*/
     -webkit-filter: grayscale(1);
     -moz-filter: grayscale(1);
     -o-filter: grayscale(1);
