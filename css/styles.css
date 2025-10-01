@@ -1,7 +1,7 @@
 
 :root {
     --body-bg: #f6f6f6;
-    --header-bg: #360505;
+    --header-bg: #542704;
     --section-bg: #f8f4eb;
     --button-bg: #8c8b8b;
     --button-text: #f1f1f1;
@@ -308,7 +308,7 @@ img {
 /*}*/
 
 .hero__title {
-    padding-top: 85px;
+    padding-top: 130px;
     text-align: center;
     max-width: 700px;
     text-transform: uppercase;
@@ -317,8 +317,11 @@ img {
     letter-spacing: 5px;
     line-height: 75px;
     color: var(--hero-title-color);
-    -webkit-text-stroke: 1px var(--header-bg);
-    text-shadow: 3px 0 var(--header-bg);
+
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: #fff;
+
+    text-shadow: 3px 0 #542704;
 }
 
 /*.hero__text p {*/
